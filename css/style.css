@@ -127,11 +127,51 @@ a:focus {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 
-	border:1px solid #D73114;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+
+	border: 1px solid #D73114;
+}
+
+.action-button:hover {
+	background-color: white;
+	color: #D73114;
+}
+
+.mail {
+	font-size: 25px;
+	display: block;
+	color: black;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+.mail:hover {
+	color: #D73114;
 }
 
 .footer-icon {
+	color: white;
+	background: #D73114;
+	border: 1px solid #D73114;
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	margin: 20px 10px;
+}
 
+.footer-icon:hover {
+	color: #D73114;
+	background: white;
+}
+
+i {
+	padding-top: 13px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	transition: all 1s;
 }
 
 /* Classes: Div Formatting */
@@ -184,4 +224,8 @@ a:focus {
 
 .red {
 	color: #D73114;
+}
+
+.round {
+	border-radius: 100%;
 }
