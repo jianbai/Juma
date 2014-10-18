@@ -109,7 +109,6 @@ a:focus {
 
 #home {
 	padding-top: 60px;
-	color: #36363c;
 }
 
 #definition {
@@ -119,10 +118,8 @@ a:focus {
 }
 
 #juma {
-	font-family: "Oswald", sans-serif;
 	font-size: 100px;
 	line-height: 100px;
-	font-weight: 300;
 }
 
 #djuma {
@@ -131,9 +128,7 @@ a:focus {
 }
 
 #desc {
-	padding: 10px 0px 0px 0px;
-	width: 40%;
-	text-align: justify;
+	margin: 10px 0;
 }
 
 .sub-header {
@@ -151,7 +146,7 @@ a:focus {
 	position: relative;
 	margin: 0 auto;
 	padding: 10px 0;
-	line-height: 26px;
+	line-height: 30px;
 	font-size: 20px;
 }
 
@@ -174,12 +169,12 @@ a:focus {
 	-moz-transition: all .5s;
 	transition: all .5s;
 
-	border: 1px solid #D73114;
+	border: 3px solid #D73114;
 }
 
 .action-button:hover {
-	background-color: white;
-	color: #D73114;
+	background-color: #D73114;
+	color: #F8F8F8;
 }
 
 .divider {
@@ -332,6 +327,10 @@ i {
 
 .red {
 	color: #D73114;
+}
+
+.dark {
+	color: #36363c;
 }
 
 .round {
