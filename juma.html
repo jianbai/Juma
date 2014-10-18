@@ -10,46 +10,61 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon-J.png">
 
-	<!-- CSS Files -->	
+	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<!-- Page Styles -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
 
 </head>
 
 <body class="white-layout">
 
 	<!-- Header -->
-	<header class="full-screen relative container t-center">
-		<h1 class="red header">Juma</h1>
-		<p class="sub-text">local food ~ global taste</p>
+	<header id="splash" class="full-screen relative container t-center">
+		<img src="images/logoGlow.png">
+		<a href="#home" class="smoothScroll scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
 	</header>
 	<!-- End Header -->
 
 	<!-- Home -->
-	<section id="home" class="t-center">
+	<section id="home" class="full-screen t-center">
 
-		<header>
-			<h2 class="sub-header no-margin no-padding">Juma: to <em>gather</em></h2>
-		</header>
+		<div id="definition" class="red sub-text">
+			<p id="juma">JUMA</p>
+			<p id="djuma" class="ptserif">/dʒumə/</p>
+		</div>
 		
-		<div id="desc" class="sub-text">
+		<div id="desc" class="ptserif sub-text">
 			<p>Juma is a farm-to-fork food truck operating in Victoria, B.C. bringing to life global flavours from local produce. Juma’s seasonal menu cycles through the bounty of fruits and vegetables, locally grown right here, on Vancouver Island. We also guarantee that 100% of the lamb, pork and chicken appearing on the menu is pasture-raised on our very own family farm in Saanich.  If you want to eat amazing food, support local farming/agriculture and be more aware of where your food comes from, then look no further!</p>
 		</div>
+
+		<!-- Call to Action -->
+		<div class="call-to-action">
+			<input type="submit" value="Get Caterd" class="white red-bg action-button">
+		</div>
+		<!-- End Call to Action -->
+
+		<a href="#section1" class="smoothScroll red scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
 
 	</section>
 	<!-- End Home -->
 
-	<!-- Call to Action -->
-	<section id="action" class="call-to-action t-center">
-		<input type="submit" value="Get Caterd" class="white red-bg action-button">
-	</section>
-	<!-- Call to Action -->
+	<!-- Divider -->
+	
 
 	<!-- Section 1 -->
-	<section id="section1" class="t-center white red-bg container">
+	<section id="section1" class="full-screen t-center no-padding white-bg container">
+
+		<section id="food" class="t-center divider container">
+		<div class="relative divider-box">
+			<header class="light oswald">THE FOOD</header>
+		</div>
+		</section>
 
 		<header>
 			<h3 class="sub-header no-margin">The Food</h3>
@@ -57,11 +72,19 @@
 
 		<p class="sub-text">I make some dope food. YOLO pickled hella, bespoke synth bicycle rights Odd Future kitsch whatever Portland. Umami pork belly butcher pickled 90's 3 wolf moon. Church-key blog kale chips flannel, twee kitsch fanny pack yr. Farm-to-table distillery Neutra, quinoa roof party gluten-free gastropub Wes Anderson try-hard ugh kale chips beard Truffaut wayfarers meh.</p>
 
+		<a href="#section2" class="smoothScroll red scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
+
 	</section>
 	<!-- End Section 1 -->
 
 	<!-- Section 2 -->
 	<section id="section2" class="t-center container">
+
+		<section id="farm" class="t-center divider container">
+		<div class="relative divider-box">
+			<header class="light oswald">THE FARM</header>
+		</div>
+		</section>
 
 		<header>
 			<h3 class="sub-header no-margin">The Farm</h3>
