@@ -184,6 +184,7 @@ a:focus {
 
 .divider {
 	font-size: 60px;
+	height: 200px;
 }
 
 .divider-box {
@@ -195,13 +196,23 @@ a:focus {
 }
 
 #food {
-	height: 200px;
 	background-image: url('../images/photo1.jpg');
 	background-position: 50% 60%;
 }
 
 #farm {
-	
+	background-image: url('../images/photo2.jpg');
+	background-position: 50% 70%;
+}
+
+#crew {
+	background-image: url('../images/photo10.jpg');
+	background-position: 50% 10%;
+}
+
+#aidan {
+	width: 400px;
+	margin: auto;
 }
 
 .mail {
