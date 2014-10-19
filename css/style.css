@@ -18,7 +18,7 @@ html, body {
 	padding: 0;
 	margin-left: 0;
 	margin-right: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'PT Serif', serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -99,17 +99,17 @@ a:focus {
 }
 
 #splash {
-	background-image: url('../images/photo9.jpg');
+	background-image: url('../images/photo4.jpg');
 }
 
 .scroll-icon {
 	display: block;
-	margin: 10px;
+	
 	color: white;
 }
 
 #home {
-	padding-top: 60px;
+	padding: 30px;
 }
 
 #definition {
@@ -240,9 +240,9 @@ a:focus {
 }
 
 .footer-icon {
-	color: white;
-	background: #D73114;
-	border: 1px solid #D73114;
+	color: #D73114;
+	background: #F8F8F8;
+	border: 2px solid #D73114;
 	display: inline-block;
 	width: 62px;
 	height: 62px;
@@ -253,8 +253,8 @@ a:focus {
 }
 
 .footer-icon:hover {
-	color: #D73114;
-	background: white;
+	color: #F8F8F8;
+	background: #D73114;
 }
 
 i {
@@ -265,7 +265,10 @@ i {
 
 .full-screen {
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
+	display: block;
+	position: relative;
 }
 
 .full-width {
