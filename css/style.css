@@ -275,6 +275,10 @@ i {
 	top: 0;
 }
 
+.auto-height {
+	height: auto;
+}
+
 .no-padding {
 	padding: 0;
 }
