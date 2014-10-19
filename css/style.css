@@ -100,6 +100,7 @@ a:focus {
 
 #splash {
 	background-image: url('../images/photo4.jpg');
+	background-size: cover;
 }
 
 .scroll-icon {
@@ -109,13 +110,14 @@ a:focus {
 }
 
 #home {
-	padding: 30px;
+
 }
 
 #definition {
-	width: 40%;
+	width: 40vw;
 	max-width: 1170px;
 	text-align: left;
+	top: 5vh;
 }
 
 #juma {
@@ -186,11 +188,57 @@ a:focus {
 	position: relative;
 }
 
+#form1 {
+	top: 30px;
+}
+
+#home-scroller {
+	padding: 15px 0px;
+}
+
 .expand-form {
 	width: 40%;
 	height: 400px;
 	background-color: #D73114;
 	color: #F8F8F8;
+}
+
+.parallax {
+	perspective: 1px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.parallax-group {
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+
+.parallax-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.parallax-layer--fg {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 4;
+}
+
+.parallax-layer--bg {
+
+	transform: translateZ(-1px) scale(2);
+
+}
+
+.parallax-bg {
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-y: auto;
 }
 
 .divider {
@@ -208,7 +256,7 @@ a:focus {
 
 #food {
 	background-image: url('../images/photo1.jpg');
-	background-position: 50% 60%;
+	/*background-position: 50% 60%;*/
 }
 
 #farm {
@@ -264,9 +312,9 @@ i {
 /* Classes: Div Formatting */
 
 .full-screen {
-	width: 100%;
-	height: auto;
-	min-height: 100%;
+	width: 100vw;
+
+	min-height: 100vh;
 	display: block;
 	position: relative;
 }
