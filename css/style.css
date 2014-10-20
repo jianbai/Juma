@@ -99,13 +99,31 @@ a:focus {
 }
 
 #splash {
-	background-image: url('../images/photo4.jpg');
+	/*background-image: url('../images/photo4.jpg');
+	background-size: cover;*/
+}
+
+#logo {
+	position: relative;
+	z-index: 10;
+}
+
+#splash-scroller {
+	position: relative;
+	z-index: 1000;
+}
+
+#bgvid {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-size: cover;
 }
 
 .scroll-icon {
 	display: block;
-	
 	color: white;
 }
 
