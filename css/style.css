@@ -222,9 +222,12 @@ a:focus {
 }
 
 .parallax {
-	perspective: 1px;
+	perspective: 300px;
+	-webkit-perspective: 300px;
 	overflow-x: hidden;
 	overflow-y: auto;
+	min-height: 500px;
+	height: 300vh;
 }
 
 .parallax-group {
