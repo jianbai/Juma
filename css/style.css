@@ -18,14 +18,10 @@ body, html {
     -webkit-font-smoothing: antialiased;
 }
 
-
-
 a {
     text-decoration: none;
     cursor: pointer;
 }
-
-
 
  /* centre the content in the parallax layers */
 .content {
@@ -53,8 +49,9 @@ a {
 }
 
 .section-container {
-    width: 50vw;
-    margin-bottom: 30px;
+    width: 100vw;
+    height: 25vh;
+    position: relative;
 }
 
 .button {
@@ -117,11 +114,57 @@ a {
     padding-top: 13px;
 }
 
+#team {
+	top: 0px;
+	margin: auto;
+}
+
+.portrait {
+	width: 180px;
+	height: 180px;
+	margin: 0px 20px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.headshot {
+	width: 180px;
+	height: 180px;
+	position: relative;
+}
+
+#fmurray {
+	width: 180px;
+	height: 200px;
+}
+
+.caption {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 15px;
+	position: absolute;
+	opacity: 0.8;
+	background-color: #424249;
+}
+
+.title {
+	margin: auto;
+	opacity: 1;
+	color: #F8F8F8;
+	padding: 30% 0;
+}
+
 /* Addable classes
 --------------------------------------------- */
 
 .relative {
     position: relative;
+}
+
+.hide {
+	display: none;
 }
 
 .white-layout {

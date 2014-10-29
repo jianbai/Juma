@@ -118,4 +118,13 @@ $(document).ready(function() {
 		return button.accordion('option', 'active');
 	}
 
+// Portrait hover states
+
+	$('.portrait').hover(
+		function() {
+			$(this).children('.caption').fadeToggle();
+		}, function() {
+			$(this).children('.caption').fadeToggle();
+		});
+
 });
