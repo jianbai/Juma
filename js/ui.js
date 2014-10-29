@@ -1,73 +1,121 @@
 $(document).ready(function() {
 
-// State
-
-	var state1 = true;
-	var state2 = true;
-
-// Hide catering forms
-
-	$("#catering1").hide();
-	$("#catering2").hide();
-
 // Smooth scrolling
 
-	$("#splash-scroller").click(function() {
-		$('html, body').animate({
-    		scrollTop: $("#home").offset().top
-		}, 1000);
+	$('#group1-scroller').click(function() {
+
+		$('.parallax').animate({
+			scrollTop: $('#group2').offset().top + $('.parallax').scrollTop()
+		}, 700);
+
 	});
 
-	$("#home-scroller").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#section1").offset().top
-		}, 1000);
+	$('#group2-scroller').click(function() {
+
+		$('.parallax').animate({
+			scrollTop: $('#group3').offset().top + $('.parallax').scrollTop()
+		}, 700);
+
 	});
 
-	$("#section1-scroller").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#section2").offset().top
-		}, 1000);
+	$('#group4-scroller').click(function() {
+
+		$('.parallax').animate({
+			scrollTop: $('#group5').offset().top + $('.parallax').scrollTop()
+		}, 700);
+
 	});
 
-	$("#section2-scroller").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#section3").offset().top
-		}, 1000);
+	$('#group6-scroller').click(function() {
+
+		$('.parallax').animate({
+			scrollTop: $('#group7').offset().top + $('.parallax').scrollTop()
+		}, 700);
+
 	});
 
-	$("#button1").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#form1").offset().top
-		}, 1000);
+// Catering forms
 
-		if (state1) {
-			$("#catering1").show("blind", 400);
+	var button1 = $('#button1');
+	var container1 = $('#group2');
+	var button2 = $('#button2');
+	var container2 = $('#group8');
+	var formHeight;
+
+	var icons = { 
+		header: "fa fa-caret-right",
+    	activeHeader: "fa fa-caret-down"
+    	};
+
+	$('#button1').accordion({
+		collapsible: true,
+		active: false,
+		animate: {
+			duration: 700,
+			easing: 'swing'
+		},
+		icons: icons,
+		beforeActivate: function( event, ui ) {
+			formHeight = $('.form').height();
+		}
+	});
+
+	$('#accordion1').click(function() {
+		var containerHeight = container1.height();
+
+		if (typeof isOpen(button1) == 'boolean') {
+			container1.animate({
+				height: containerHeight - formHeight
+			}, 700, 'swing');
 		} else {
-			$("#catering1").hide("blind", 400);
+			container1.animate({
+				height: containerHeight + formHeight
+			}, 700, 'swing');
 		}
 
-		state1 = !state1;
+		$('.parallax').animate({
+			scrollTop: $('#button1').offset().top + $('.parallax').scrollTop() - 15,
+			easing: 'swing'
+		}, 700);
+	})
+
+	$('#button2').accordion({
+		collapsible: true,
+		active: false,
+		animate: {
+			duration: 700,
+			easing: 'swing'
+		},
+		icons: icons,
+		beforeActivate: function( event, ui ) {
+			formHeight = $('.form').height();
+		}
 	});
 
-	$("#button2").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#form2").offset().top
-		}, 1000);
+	$('#accordion2').click(function() {
+		var containerHeight = container2.height();
 
-		if (state2) {
-			$("#catering2").show("blind", 400);
+		console.log(formHeight);
+		console.log(containerHeight);
+
+		if (typeof isOpen(button2) == 'boolean') {
+			container2.animate({
+				height: containerHeight - formHeight
+			}, 700, 'swing');
 		} else {
-			$("#catering2").hide("blind", 400);
+			container2.animate({
+				height: containerHeight + formHeight
+			}, 700, 'swing');
 		}
 
-		state2 = !state2;
-	});
+		$('.parallax').animate({
+			scrollTop: $('#button2').offset().top + $('.parallax').scrollTop() - 15,
+			easing: 'swing'
+		}, 700);
+	})
 
-// Catering form
-
-	$(".action-button").click(function() {
-		$(this).toggleClass("expand-form", 1000);
-	});
+	function isOpen(button) {
+		return button.accordion('option', 'active');
+	}
 
 });

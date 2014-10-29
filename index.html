@@ -1,167 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+  		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-	<!-- Metadata -->
-	<title> WELCOME TO MY LAIR </title>
-	<meta charset="utf-8">
-	<meta name="description" content="AIDAN BITCHEZ">
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/ui.js"></script>
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/ico" href="images/favicon.ico">
+  	</head>
 
-	<!-- CSS Files -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<!-- Page Styles -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<!-- JQuery -->
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/ui.js"></script>
+  	<body>
+  		
+  		<div class="debug">
+    		<label><input type="checkbox"> Debug</label>
+  		</div>
+  
+  		<div class="parallax">
 
+  			<div id="group1" class="parallax__group--main">
+  				<div id="splash" class="parallax__layer parallax__layer--base">
+  					<div class="content">
 
-</head>
+  						<img id="logo" src="images/logoGlow.png">
 
-<body class="white-layout">
+  						<a id="group1-scroller">
+  							<i class="fa fa-angle-down fa-4x"></i>
+  						</a>
 
-	<!-- Header -->
-	<header id="splash" class="full-screen relative container t-center no-padding">
-		<img id="logo" src="images/logoGlow.png">
-		<a id="splash-scroller" class="dark scroll-icon"><i class="fa fa-angle-down fa-4x"></i></a>
-		<video autoplay loop poster="video/tom.png" id="bgvid" class="full-screen no-margin no-padding">
-			<source src="video/tom.webm" type="video/webm">
-			<source src="video/tom.mp4" type="video/webm">
-		</video>
-	</header>
-	<!-- End Header -->
+  					</div>
+  					<!--
+  					<video autoplay loop poster="video/tom.png" id="bgvid" class="content">
+							<source src="video/tom.webm" type="video/webm">
+							<source src="video/tom.mp4" type="video/webm">
+					</video>
+					-->
+  				</div>
+  			</div>
 
-	<!-- Home -->
-	<section id="home" class="full-screen t-center no-padding dark container">
+  			<div id="group2" class="parallax__group--main">
 
-			<div id="definition" class="sub-text">
-				<p id="juma" class="red oswald light">JUMA</p>
-				<p id="djuma" class="ptserif">/dʒu·mə/</p>
-			
-				<div id="desc" class="ptserif t-justify">
-					<p>Juma is a farm-to-fork food truck operating in Victoria, B.C. bringing to life global flavours from local produce. Juma’s seasonal menu cycles through the bounty of fruits and vegetables, locally grown right here, on Vancouver Island. We also guarantee that 100% of the lamb, pork and chicken appearing on the menu is pasture-raised on our very own family farm in Saanich.  If you want to eat amazing food, support local farming/agriculture and be more aware of where your food comes from, then look no further!</p>
-				</div>
-			</div>
+  				<div class="parallax__layer parallax__layer--base">
 
-			<!-- Call to Action -->
-			<section id="form1" class="call-to-action toggler">
-					<div id="button1" class="oswald action-button">
-						GIT CATERD
-						<div id="catering1">
-							<p class="oswald">blah blah blah</p>
-						</div>
-					</div>
-			</section>
-			<!-- End Call to Action -->
+  					<div class="content">
 
-			<a id="home-scroller" class="dark scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
+  						<div class="blurb-container t-left">
 
-	</section>
-	<!-- End Home -->
+  							<h1 class="red light oswald">JUMA</h1>
+  							<h3 id="phonetic" class="dark light ptserif">/dʒu·mə/</h3>
+  							<div id="blurb" class="dark ptserif t-justify">
+  								Juma is a farm-to-fork food truck operating in Victoria, B.C. bringing to life global flavours from local produce. Juma’s seasonal menu cycles through the bounty of fruits and vegetables, locally grown right here, on Vancouver Island. We also guarantee that 100% of the lamb, pork and chicken appearing on the menu is pasture-raised on our very own family farm in Saanich.  If you want to eat amazing food, support local farming/agriculture and be more aware of where your food comes from, then look no further!
+  							</div>
 
-	<!-- Divider -->
-	
-	<div class="parallax">
-		<!-- Section 1 -->
-		<section id="section1">
+  						</div>
 
-			<div class="full-screen t-center no-padding dark container">
-				<div id="food" class="parallax-bg t-center divider container">
-					<div class="relative divider-box">
-						<header class="light oswald">THE FOOD</header>
-					</div>
-				</div>
+                        <div id="button1" class="oswald button">
+                            <h4 id="accordion1" class="normal">GIT CATERD</h4>
+                            <div class="form">
+                                Name: <br>
+                                Date of event: <br>
+                                Time of event: <br>
+                                Number of guests: <br>
+                                Dietary restrictions: <br>
+                                Where the money at: <br>
+                                Anything else?
+                            </div>
+                        </div>
 
-				<header>
-					<h3 class="sub-header no-margin">The Food</h3>
-				</header>
+                        <a id="group2-scroller">
+                            <i class="fa fa-angle-down fa-4x"></i>
+                        </a>
 
-				<p class="sub-text">I make some dope food. YOLO pickled hella, bespoke synth bicycle rights Odd Future kitsch whatever Portland. Umami pork belly butcher pickled 90's 3 wolf moon. Church-key blog kale chips flannel, twee kitsch fanny pack yr. Farm-to-table distillery Neutra, quinoa roof party gluten-free gastropub Wes Anderson try-hard ugh kale chips beard Truffaut wayfarers meh.</p>
+  					</div>
 
-				<a id="section1-scroller" class="dark scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
-			</div>
+  				</div>
 
-		</section>
-		<!-- End Section 1 -->
+  			</div>
 
-		<!-- Section 2 -->
-		<section id="section2">
+  			<div id="group3" class="parallax__group--bg">
 
-			<div class="full-screen t-center no-padding dark container">
-				<div id="farm" class="t-center divider container parallax-bg">
-					<div class="relative divider-box">
-						<header class="light oswald">THE FARM</header>
-					</div>
-				</div>
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="content">
+                        <div class="title-box t-center">
+                            <div>
+                                <h2 class="light oswald">THE FOOD</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<p class="sub-text">Sayward Farm is a 3.5 mixed farm just off the Lochside Trail at the northern border of Saanich. With as few gasoline powered machines as possible, Jim and Jan Pine tend 75 fruit and nut trees, blueberries, a .2 acre garden as well as pastures for sheep, pigs, turkeys, chickens and ducks. Food scraps from Juma are cycled back into the farm as feed for the pigs and chickens as a way of harmonizing the relationship between food truck and farm.</p>
+                <div class="parallax__layer parallax__layer--back">
+                    <div id="bg1" class="content--bg">
+                        <img id="photo1" src="images/photo4.jpg">
+                    </div>
+                </div>
 
-				<a id="section2-scroller" class="dark scroll-icon"><i class="fa fa-angle-down fa-3x"></i></a>
-			</div>
+  			</div>
 
-		</section>
-		<!-- End Section 2 -->
+  			<div id="group4" class="parallax__group--fg">
 
-		<!-- Section 3 -->
-		<section id="section3">
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="content">
+                        
+                        <div>
+                            I make some dope food. YOLO pickled hella, bespoke synth bicycle rights Odd Future kitsch whatever Portland. Umami pork belly butcher pickled 90's 3 wolf moon. Church-key blog kale chips flannel, twee kitsch fanny pack yr. Farm-to-table distillery Neutra, quinoa roof party gluten-free gastropub Wes Anderson try-hard ugh kale chips beard Truffaut wayfarers meh.
+                        </div>
 
-			<div class="full-screen t-center no-padding dark container">
-				<div id="crew" class="t-center divider container parallax-bg">
-					<div id="aidan" class="relative divider-box">
-						<header class="light oswald">AIDAN MOTHERFUCKING PINE</header>
-					</div>
-				</div>	
+                        <a id="group4-scroller">
+                            <i class="fa fa-angle-down fa-4x"></i>
+                        </a>
 
-				<header>
-					<h3 class="sub-header no-margin">The Legend</h3>
-				</header>
+                    </div>
+                </div>
 
-				<p class="sub-text">My name is Aidan I am dope as fuck. Portland you probably haven't heard of them readymade cray, umami shabby chic church-key Neutra fixie Austin chambray meh XOXO fashion axe. Normcore craft beer stumptown blog. Gentrify Carles Bushwick, jean shorts chambray scenester PBR letterpress art party heirloom twee cornhole Kickstarter. Organic cardigan street art umami.</p>
+  			</div>
 
-				<!-- Call to Action -->
-				<section id="form2" class="t-center call-to-action">
-					<div id="button2" class="oswald action-button">
-						GIT CATERD
-						<div id="catering2">
-							<p class="oswald">blah blah blah</p>
-						</div>
-					</div>
-				</section>
-				<!-- Call to Action -->
+  			<div id="group5" class="parallax__group--bg">
 
-				<!-- Footer -->
-				<footer>
-					<div id="contact" class="t-center sub-text">
-						<!-- E-Mail -->
-						<a href="mailto:info@jumavictoria.com" class="oswald light dark mail">
-							info@jumavictoria.com
-						</a>
-						<!-- Social, Facebook -->
-						<a href="http://www.facebook.com//pages/Juma/287492378083470" target="_blank" class="round footer-icon">
-							<i class="fa fa-facebook fa-2x"></i>
-						</a>
-						<!-- Twitter -->
-						<a href="http://www.twitter.com/Juma_Victoria" target="_blank" class="round footer-icon">
-							<i class="fa fa-twitter fa-2x"></i>
-						</a>
-						<!-- YouTube -->
-						<a href="#" target="_blank" class="round footer-icon">
-							<i class="fa fa-heart fa-2x"></i>
-						</a>
-					</div>
-				</footer>
-				<!-- End Footer -->
-			</div>
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="content">
+                        <div class="title-box t-center">
+                            <div>
+                                <h2 class="light oswald">THE FARM</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		</section>
-		<!-- End Section 3 -->
-	</div>
+                <div class="parallax__layer parallax__layer--back">
+                    <div id="bg2" class="content--bg">
+                        <img id="photo2" src="images/photo7.jpg">
+                    </div>
+                </div>
 
-</body>
+  			</div>
+
+  			<div id="group6" class="parallax__group--fg">
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="content">
+
+                        <div>
+                            Sayward Farm is a 3.5 mixed farm just off the Lochside Trail at the northern border of Saanich. With as few gasoline powered machines as possible, Jim and Jan Pine tend 75 fruit and nut trees, blueberries, a .2 acre garden as well as pastures for sheep, pigs, turkeys, chickens and ducks. Food scraps from Juma are cycled back into the farm as feed for the pigs and chickens as a way of harmonizing the relationship between food truck and farm.
+                        </div>
+
+                        <a id="group6-scroller">
+                            <i class="fa fa-angle-down fa-4x"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+  			</div>
+
+  			<div id="group7" class="parallax__group--bg">
+
+                <div class="parallax__layer parallax__layer--base">
+                    <div class="content">
+                        <div class="title-box t-center">
+                            <div>
+                                <h2 class="light oswald">THE FLIP</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parallax__layer parallax__layer--back">
+                    <div id="bg3" class="content--bg">
+                        <img id="photo3" src="images/team.jpg">
+                    </div>
+                </div>
+
+  			</div>
+
+            <div id="group8" class="parallax__group--fg">
+
+                <div class="parallax__layer parallax__layer--base">
+                    
+                    <div class="content">
+
+                        <div class="section-container">
+                            My name is Aidan I am dope as fuck. Portland you probably haven't heard of them readymade cray, umami shabby chic church-key Neutra fixie Austin chambray meh XOXO fashion axe. Normcore craft beer stumptown blog. Gentrify Carles Bushwick, jean shorts chambray scenester PBR letterpress art party heirloom twee cornhole Kickstarter. Organic cardigan street art umami.
+                        </div>
+
+                        <div id="button2" class="oswald button">
+                            <h4 id="accordion2" class="normal">GIT CATERD</h4>
+                                <div class="form">
+                                    Name: <br>
+                                    Date of event: <br>
+                                    Time of event: <br>
+                                    Number of guests: <br>
+                                    Dietary restrictions: <br>
+                                    Where the money at: <br>
+                                    Anything else?
+                                </div>
+                        </div>
+
+                        <div id="contact">
+                            <!-- E-Mail -->
+                            <div id="mail">
+                                <a href="mailto:info@jumavictoria.com">
+                                    <h4 class="dark normal oswald">
+                                        INFO@JUMAVICTORIA.COM
+                                    </h4>
+                                </a>
+                            </div>
+                            
+                            <!-- Social -->
+                            <div id="social">
+                                <!-- Facebook -->
+                                <a href="http://www.facebook.com//pages/Juma/287492378083470" class="round footer-icon">
+                                    <i class="fa fa-facebook fa-2x icon"></i>
+                                </a>
+                                <!-- Twitter -->
+                                <a href="http://www.twitter.com/Juma_Victoria" class="round footer-icon">
+                                    <i class="fa fa-twitter fa-2x icon"></i>
+                                </a>
+                                <!-- YouTube -->
+                                <a href="#" class="round footer-icon">
+                                    <i class="fa fa-heart fa-2x icon"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+  		</div>
+
+  		<script>
+		    var debugInput = document.querySelector("input");
+		    function updateDebugState() {
+		        document.body.classList.toggle('debug-on', debugInput.checked);
+		    }
+		    debugInput.addEventListener("click", updateDebugState);
+		    updateDebugState();
+  		</script>
+
+  	</body>
+
 </html>
