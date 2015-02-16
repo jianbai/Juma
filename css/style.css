@@ -18,6 +18,8 @@ body, html {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -45,7 +47,19 @@ a {
 }
 
 .blurb-container {
-    width: 40vw;
+    width: 90vw;
+}
+
+@media (min-width: 50rem) {
+    .blurb-container {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 70rem) {
+    .blurb-container {
+        width: 40vw;
+    }   
 }
 
 .section-container {
@@ -115,16 +129,26 @@ a {
 }
 
 #team {
-	top: 0px;
-	margin: auto;
+	margin-top: -160px;
+    margin-bottom: 40px;
 }
 
 .portrait {
 	width: 180px;
 	height: 180px;
-	margin: 0px 20px;
-	display: inline-block;
+	margin: 20px auto;
+	display: block;
 	overflow: hidden;
+}
+
+@media (min-width: 60rem) {
+    .portrait {
+        width: 180px;
+        height: 180px;
+        margin: 0 20px;
+        display: inline-block;
+        overflow: hidden;
+    }    
 }
 
 .headshot {
@@ -231,7 +255,8 @@ a {
 }
 
 #logo {
-
+    width: 50vw;
+    min-width: 20rem;
 }
 
 #bgvid {
@@ -243,12 +268,47 @@ a {
 
 }
 
-#phonetic {
-    margin: 10px 0px;
+#blurb-title {
+    font-size: 2rem;
 }
 
-#blurb {
+#phonetic {
+    font-size: 1.2rem;
+    margin: 0px;
+}
 
+.blurb {
+    font-size: 16px;
+}
+
+@media (min-width: 50rem) {
+    #blurb-title {
+        font-size: 3rem;
+    }
+
+    #phonetic {
+        font-size: 1.4rem;
+        margin: 0px;
+    }
+
+    .blurb {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 70rem) {
+    #blurb-title {
+        font-size: 4rem;
+    }
+
+    #phonetic {
+        font-size: 1.6rem;
+        margin: 10px 0px;
+    }
+
+    .blurb {
+        font-size: 20px;
+    }    
 }
 
 #blurb-scroller {
@@ -261,7 +321,8 @@ a {
 
 #photo1 {
     width: 100vw;
-    height: 100vh;
+    min-width: 50rem;
+    margin-left: -25vw;
 }
 
 #bg2 {
@@ -270,7 +331,8 @@ a {
 
 #photo2 {
     width: 100vw;
-    height: 100vh;
+    min-width: 50rem;
+    margin-left: -25vw;
 }
 
 #bg3 {
@@ -281,8 +343,23 @@ a {
 
 #photo3 {
     width: 100vw;
-    height: 100vh;
+    min-width: 50rem;
     clip: 40vh 0;
+}
+
+@media (min-width: 50rem) {
+
+    #photo1 {
+        width: 100vw;
+        min-width: 50rem;
+        margin-left: 0;
+    }
+
+    #photo2 {
+        width: 100vw;
+        min-width: 50rem;
+        margin-left: 0;
+    }
 }
 
 #contact {
