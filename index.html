@@ -3,9 +3,9 @@
 	<head>
 		
 		<!-- Metadata -->
-		<title> WELCOME TO MY LAIR </title>
+		<title> Juma </title>
 		<meta charset="utf-8">
-		<meta name="description" content="AIDAN BITCHEZ">
+		<meta name="description" content="Juma">
 		<meta name="viewport" content="width=device-width">
 
 		<!-- Favicon -->
@@ -27,18 +27,19 @@
   	</head>
 
   	<body>
-  		
-  		<div class="debug">
-    		<label><input type="checkbox"> Debug</label>
-  		</div>
   
   		<div class="parallax">
 
+        <div class="box">
   			<div id="group1" class="parallax__group--main">
   				<div id="splash" class="parallax__layer parallax__layer--base">
   					<div class="content">
-
+              <!--
   						<img id="logo" src="images/logoGlow.png">
+              -->
+              <div id="title">
+                <h1 class="light oswald" id="splash-title">JUMA</h1>
+              </div>
 
   						<a id="group1-scroller">
   							<i class="fa fa-angle-down fa-4x"></i>
@@ -53,6 +54,7 @@
 					
   				</div>
   			</div>
+        </div>
 
   			<div id="group2" class="parallax__group--main">
 
@@ -71,15 +73,55 @@
   						</div>
 
                         <div id="button1" class="oswald button">
-                            <h4 id="accordion1" class="normal">GIT CATERD</h4>
+                            <h4 id="accordion1" class="normal">Cater your event</h4>
                             <div class="form">
-                                Name: <br>
-                                Date of event: <br>
-                                Time of event: <br>
-                                Number of guests: <br>
-                                Dietary restrictions: <br>
-                                Where the money at: <br>
-                                Anything else?
+                              <div id="after_submit"></div>
+                              <div id="caterform" action="">
+                                <div class="row">
+                                  <label class="required" for="name">Your name: *</label><br />
+                                  <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="email">Your email: *</label><br />
+                                  <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="time">Date and time of event:</label><br />
+                                  <input id="time" class="input" name="time" type="text" value="" size="30" /><br />
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="guestcount">Number of guests:</label><br />
+                                  <input id="guestcount" class="input" name="guestcount" type="text" value="" size="30" /><br />
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="diet">Dietary preferences:</label><br />
+                                  <input id="diet" class="input" name="diet" type="text" value="" size="30" /><br />
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="electricity">Electricity available:</label><br />
+                                  <select id="electricity" class="input" name="electricity" type="text" value="">
+                                    <option value="1x15A">1x15A</option>
+                                    <option value="2x15A">2x15A</option>
+                                    <option value="Other">Other</option>
+                                    <option value="I don't know">I don't know!</option>
+                                  </select>
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="payment">Preferred payment method:</label><br />
+                                  <select id="payment" class="input" name="payment" type="text" value="">
+                                    <option value="host">Event host will pay</option>
+                                    <option value="guests">Guests will pay individually</option>
+                                  </select>
+                                </div>
+                                <div class="row">
+                                  <label class="required" for="anything">Anything else?</label><br />
+                                  <textarea id="anything" class="input" name="anything" rows="7" cols="30"></textarea><br />
+                                </div>
+                                  
+                                  <a href="thanks.html">
+                                    <input id="submit_button" type="submit" value="Get in touch" />
+                                  </a>
+                              </div>
                             </div>
                         </div>
 
@@ -99,7 +141,7 @@
                     <div class="content">
                         <div class="title-box t-center">
                             <div>
-                                <h2 class="light oswald">THE FOOD</h2>
+                                <h2 class="light oswald">The Food</h2>
                             </div>
                         </div>
                     </div>
@@ -118,7 +160,7 @@
                 <div class="parallax__layer parallax__layer--base">
                     <div class="content">
                         
-                        <div class="blurb-container blurb">
+                        <div class="blurb-container t-justify blurb">
                             I make some dope food. YOLO pickled hella, bespoke synth bicycle rights Odd Future kitsch whatever Portland. Umami pork belly butcher pickled 90's 3 wolf moon. Church-key blog kale chips flannel, twee kitsch fanny pack yr. Farm-to-table distillery Neutra, quinoa roof party gluten-free gastropub Wes Anderson try-hard ugh kale chips beard Truffaut wayfarers meh.
                         </div>
 
@@ -137,7 +179,7 @@
                     <div class="content">
                         <div class="title-box t-center">
                             <div>
-                                <h2 class="light oswald">THE FARM</h2>
+                                <h2 class="light oswald">The Farm</h2>
                             </div>
                         </div>
                     </div>
@@ -156,7 +198,7 @@
                 <div class="parallax__layer parallax__layer--base">
                     <div class="content">
 
-                        <div class="blurb-container blurb">
+                        <div class="blurb-container t-justify blurb">
                             Sayward Farm is a 3.5 mixed farm just off the Lochside Trail at the northern border of Saanich. With as few gasoline powered machines as possible, Jim and Jan Pine tend 75 fruit and nut trees, blueberries, a .2 acre garden as well as pastures for sheep, pigs, turkeys, chickens and ducks. Food scraps from Juma are cycled back into the farm as feed for the pigs and chickens as a way of harmonizing the relationship between food truck and farm.
                         </div>
 
@@ -175,7 +217,7 @@
                     <div class="content">
                         <div class="title-box t-center">
                             <div>
-                                <h2 class="light oswald">THE TEAM</h2>
+                                <h2 class="light oswald">The Team</h2>
                             </div>
                         </div>
                     </div>
@@ -238,16 +280,56 @@
                         
 
                         <div id="button2" class="oswald button">
-                            <h4 id="accordion2" class="normal">GIT CATERD</h4>
+                            <h4 id="accordion2" class="normal">Cater your event</h4>
                                 <div class="form">
-                                    Name: <br>
-                                    Date of event: <br>
-                                    Time of event: <br>
-                                    Number of guests: <br>
-                                    Dietary restrictions: <br>
-                                    Where the money at: <br>
-                                    Anything else?
+                                <div id="after_submit"></div>
+                                <div id="caterform" action="" method="">
+                                  <div class="row">
+                                    <label class="required" for="name">Your name:</label><br />
+                                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="email">Your email:</label><br />
+                                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="time">Date and time of event:</label><br />
+                                    <input id="time" class="input" name="time" type="text" value="" size="30" /><br />
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="guestcount">Number of guests:</label><br />
+                                    <input id="guestcount" class="input" name="guestcount" type="text" value="" size="30" /><br />
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="diet">Dietary preferences:</label><br />
+                                    <input id="diet" class="input" name="diet" type="text" value="" size="30" /><br />
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="electricity">Electricity available:</label><br />
+                                    <select id="electricity" class="input" name="electricity" type="text" value="">
+                                      <option value="1x15A">1x15A</option>
+                                      <option value="2x15A">2x15A</option>
+                                      <option value="Other">Other</option>
+                                      <option value="I don't know">I don't know!</option>
+                                    </select>
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="payment">Preferred payment method:</label><br />
+                                    <select id="payment" class="input" name="payment" type="text" value="">
+                                      <option value="host">Event host will pay</option>
+                                      <option value="guests">Guests will pay individually</option>
+                                    </select>
+                                  </div>
+                                  <div class="row">
+                                    <label class="required" for="anythingelse">Anything else?</label><br />
+                                    <textarea id="anything" class="input" name="anything" rows="7" cols="30"></textarea><br />
+                                  </div>
+                                    
+                                    <a href="thanks.html">
+                                      <button>Get in touch</button>
+                                    </a>
                                 </div>
+                            </div>
                         </div>
 
                         <div id="contact">
@@ -286,15 +368,6 @@
             </div>
 
   		</div>
-
-  		<script>
-		    var debugInput = document.querySelector("input");
-		    function updateDebugState() {
-		        document.body.classList.toggle('debug-on', debugInput.checked);
-		    }
-		    debugInput.addEventListener("click", updateDebugState);
-		    updateDebugState();
-  		</script>
 
   	</body>
 

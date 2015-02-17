@@ -18,8 +18,6 @@ body, html {
     -webkit-font-smoothing: antialiased;
 }
 
-
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -69,15 +67,14 @@ a {
 }
 
 .button {
-    width: 40vw;
-    min-width: 150px;
+    width: 90vw;
     min-height: 35px;
     cursor: pointer;
     padding: 10px 0;
     margin: 15px auto;
     position: relative;
-    background-color: #F8F8F8;
-    color: #D73114;
+    background-color: #D73114;
+    color: #F8F8F8;
 
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -91,12 +88,28 @@ a {
 }
 
 .button:hover {
-    background-color: #D73114;
-    color: #F8F8F8;
+    background-color: #F8F8F8;
+    color: #424249;
+}
+
+@media (min-width: 50rem) {
+    .button {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 70rem) {
+    .button {
+        width: 40vw;
+    }   
 }
 
 .form {
     cursor: default;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 20px;
 }
 
 .title-box {
@@ -134,8 +147,8 @@ a {
 }
 
 .portrait {
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	margin: 20px auto;
 	display: block;
 	overflow: hidden;
@@ -143,8 +156,8 @@ a {
 
 @media (min-width: 60rem) {
     .portrait {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
         margin: 0 20px;
         display: inline-block;
         overflow: hidden;
@@ -152,14 +165,14 @@ a {
 }
 
 .headshot {
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	position: relative;
 }
 
 #fmurray {
-	width: 180px;
-	height: 200px;
+	width: 160px;
+	height: 180px;
 }
 
 .caption {
@@ -259,13 +272,31 @@ a {
     min-width: 20rem;
 }
 
+#title {
+    width: 50vw;
+    min-width: 20rem;
+    color: #F8F8F8;
+    display: block;
+    padding: 100px 0;
+}
+
+#splash-title {
+    font-size: 8rem;
+}
+
+@media (min-width: 50rem) {
+    #splash-title {
+        font-size: 10rem;
+    }    
+}
+
 #bgvid {
     z-index: -1;
     
 }
 
-#splash-scroller {
-
+#group1-scroller {
+    color: #F8F8F8;
 }
 
 #blurb-title {
@@ -370,11 +401,33 @@ a {
     margin-bottom: 15px;
 }
 
+.thankyou {
+    text-align: center;
+}
+
+#thanks {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+#received {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+#signature {
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
 /* Parallax base styles
 --------------------------------------------- */
 
 .parallax {
-    height: 500px; /* fallback for older browsers */
+    height: 750px; /* fallback for older browsers */
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -384,7 +437,7 @@ a {
 
 .parallax__group--main {
     position: relative;
-    min-height: 500px; /* fallback for older browsers */
+    min-height: 750px; /* fallback for older browsers */
     min-height: 100vh;
     background-color: #F8F8F8;
     -webkit-transform-style: preserve-3d;
@@ -393,7 +446,8 @@ a {
 
 .parallax__group--bg {
     position: relative;
-    height: 200px; /* fallback for older browsers */
+    min-height: 300px;
+    height: 300px; /* fallback for older browsers */
     height: 40vh;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -401,7 +455,8 @@ a {
 
 .parallax__group--fg {
     position: relative;
-    height: 300px; /* fallback for older browsers */
+    min-height: 450px;
+    height: 450px; /* fallback for older browsers */
     height: 60vh;
     background-color: #F8F8F8;
     -webkit-transform-style: preserve-3d;
@@ -461,41 +516,4 @@ a {
 
 #group8 {
     z-index: 4;
-}
-
-/* Debugger styles - used to show the effect
---------------------------------------------- */
-
-.debug {
-    position: fixed;
-    top: 0;
-    left: .5em;
-    z-index: 999;
-    background: rgba(0,0,0,.85);
-    color: #fff;
-    padding: .5em;
-    border-radius: 0 0 5px 5px;
-}
-.debug-on .parallax__group--main {
-    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-    transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-
-.debug-on .parallax__group--bg {
-    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-    transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-
-.debug-on .parallax__group--fg {
-    -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
-    transform: translate3d(700px, 0, -800px) rotateY(30deg);
-}
-
-.debug-on .parallax__layer {
-    box-shadow: 0 0 0 2px #000;
-    opacity: 0.9;
-}
-.parallax__group--main, .parallax__group--bg, .parallax__group--fg {
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
 }

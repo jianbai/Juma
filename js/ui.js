@@ -66,17 +66,17 @@ $(document).ready(function() {
 		if (typeof isOpen(button1) == 'boolean') {
 			container1.animate({
 				height: containerHeight - formHeight
-			}, 700, 'swing');
+			}, 650, 'swing');
 		} else {
 			container1.animate({
 				height: containerHeight + formHeight
-			}, 700, 'swing');
+			}, 650, 'swing');
 		}
 
 		$('.parallax').animate({
 			scrollTop: $('#button1').offset().top + $('.parallax').scrollTop() - 15,
 			easing: 'swing'
-		}, 700);
+		}, 650);
 	})
 
 	$('#button2').accordion({
@@ -97,16 +97,6 @@ $(document).ready(function() {
 
 		console.log(formHeight);
 		console.log(containerHeight);
-
-		if (typeof isOpen(button2) == 'boolean') {
-			container2.animate({
-				height: containerHeight - formHeight
-			}, 700, 'swing');
-		} else {
-			container2.animate({
-				height: containerHeight + formHeight
-			}, 700, 'swing');
-		}
 
 		$('.parallax').animate({
 			scrollTop: $('#button2').offset().top + $('.parallax').scrollTop() - 15,
